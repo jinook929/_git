@@ -29,3 +29,9 @@ div {
     color: rgb(172, 47, 47);
     font-weight: bold;
 }
+
+#ps23_eng {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', serif;
+}

@@ -14,6 +14,8 @@ var h = d.getHours();
 var ap;
 if (h < 12) {
     ap = "AM";
+} else if (h = 12) {
+    ap = "PM";
 } else {
     ap = "PM";
     h = h - 12;
