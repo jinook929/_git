@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color: rgb(168, 132, 132);
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px rgb(197, 196, 196);
+}
+
+h2 {
+    color: rgb(22, 1, 1);
+    font-family: 'Gugi';
+    text-shadow: 2px 2px 2px rgb(206, 202, 202);
+}
+
+p {
+    text-align: center;
+    color: rgb(94, 88, 145);
+    font-family: 'Noto Serif KR';
+}
+body {
+    text-align: center;
+}
+div {
+    margin: 10px;
+}
+
+#ps23 {
+    text-align: center;
+    color: rgb(172, 47, 47);
+    font-weight: bold;
+}
