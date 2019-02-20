@@ -35,3 +35,8 @@ div {
     font-weight: bold;
     font-family: 'Roboto', serif;
 }
+
+img {
+    width: 640px;
+    border-radius: 5%;
+}
