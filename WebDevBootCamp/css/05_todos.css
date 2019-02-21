@@ -1,0 +1,33 @@
+body {
+    background: beige;
+}
+
+li {
+    border: 1px solid red;
+    margin: 1% auto;
+}
+
+div {
+    background: pink;
+}
+
+p {
+    color: gray;
+}
+
+#special {
+    color: black;
+}
+
+#significant {
+    color: blue;
+    background: rgb(219, 175, 131);
+}
+
+.highlight {
+    background: yellow;
+}
+
+.completed {
+    text-decoration: line-through;
+}

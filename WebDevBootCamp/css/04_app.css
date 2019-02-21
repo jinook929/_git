@@ -1,0 +1,23 @@
+h1 {
+    color: rgb(87, 177, 132);
+    border-color: purple;
+    border-width: 2px;
+    border-style: dotted;
+}
+
+li {
+    color: rgb(138, 53, 180);
+}
+
+h4 {
+    border: 1px solid rgb(70, 32, 70);
+    color: rgb(34, 77, 156);
+    background: rgba(250, 125, 15);
+}
+
+body {
+    background: linen;
+    /* background: url(https://images.unsplash.com/photo-1550605006-5b1c506b79f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
