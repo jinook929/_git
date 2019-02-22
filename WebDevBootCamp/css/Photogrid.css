@@ -1,0 +1,37 @@
+img {
+    object-fit: cover;
+    height: 400px;
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+p {
+    font-family: raleway;
+    margin-left: 1.66%;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+/* hr {
+    width: 30%;
+    margin-left: 1.66%
+} */
+
+
+/* div {
+    width: 100px;
+    float: left;
+}
+
+#one {
+    background: red;
+}
+
+#two {
+    background: purple;
+} */
