@@ -1,4 +1,4 @@
-h1 {
+ps23_title {
     text-align: center;
     color: rgb(168, 132, 132);
     font-family: 'Tangerine', serif;
@@ -12,6 +12,7 @@ h2 {
     text-shadow: 2px 2px 2px rgb(206, 202, 202);
 }
 
+/*
 p {
     text-align: center;
     color: rgb(94, 88, 145);
@@ -22,11 +23,12 @@ body {
 }
 div {
     margin: 10px;
-}
+} */
 
 #ps23 {
     text-align: center;
     color: rgb(172, 47, 47);
+    font-family: 'Noto Serif KR';
     font-weight: bold;
 }
 
@@ -36,7 +38,8 @@ div {
     font-family: 'Roboto', serif;
 }
 
-img {
+#sheep_pic {
+    text-align: center;
     width: 640px;
     border-radius: 5%;
 }

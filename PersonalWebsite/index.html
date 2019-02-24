@@ -8,15 +8,64 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine|Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi|Nanum+Myeongjo|Noto+Serif+KR">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    ******************
-    <h1>Hello World^^~</h1>
-    ******************
-    <p><script type="text/javascript" src="app.js"></script></p>
-    <br>
-    <h2>...시편 23편...</h2>
-    <p id = ps23>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand  mb-0 h1" href="#">
+                <img src="img/jnc.jpg" width="30" height="30"class="d-inline-block align-top" alt="">
+                JnC
+        </a>
+        <button class="navbar-toggler" type="button"data-toggle="collapse"data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only"(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#"id="navbarDropdown" role="button"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1"aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search"placeholder="Search"aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0"type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <br>    
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4 font-weight-italic">The Lord Is My Shepherd!</h1>
+            <p class="lead">“We have all things and abound; not because I have a good store of money in the bank, not because I have skill and wit with which to win my bread, but because the Lord is my shepherd.” 
+                    ― Charles Spurgeon</p>
+            <hr class="my-4">
+            <p style="text-align: center"><strong>
+                Current Time: <script type="text/javascript" src="app.js"></script></strong>
+            </p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learnmore</a>
+        </div>
+    </div>
+
+    <h2 id="ps23_title" class="text-center">...시편 23편...</h2>
+    <p id = "ps23" class="text-center">
         <br>
         여호와는 나의 목자시니 내가 부족함이 없으리로다
         <br><br>
@@ -33,7 +82,9 @@
         나의 평생에 선하심과 인자하심이 정녕 나를 따르리니 내가 여호와의 집에 영원히 거하리로다
     </p>
 
-    <img src="https://images.unsplash.com/photo-1488048924544-c818a467dacd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sheep with a Shepherd">
+    <div class="container text-center">
+    <img id="sheep_pic" src="https://images.unsplash.com/photo-1488048924544-c818a467dacd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sheep with a Shepherd">
+    </div>
 
     <p id = ps23_eng>
         <br>
@@ -52,5 +103,9 @@
         Surely goodness and love will follow me all the days of my life, and I will dwell in the house of the LORD forever.
     </p>
     <br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
