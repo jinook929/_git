@@ -5,11 +5,11 @@ let myAccount = {
 }
 
 let addExpenses = function (account, amount) {
-    return account.expenses = account.expenses + amount
+    account.expenses = account.expenses + amount
 }
 
 let addIncome = function (account, amount) {
-    return account.income = account.income + amount
+    account.income = account.income + amount
 }
 
 let accountSummary = function (account) {
@@ -19,13 +19,17 @@ let accountSummary = function (account) {
 let resetAccount = function (account) {
     account.expenses = 0,
     account.income = 0
+    return console.log(`...Account resetted...`)
 }
 
 console.log(myAccount)
+console.log(accountSummary(myAccount))
 addIncome(myAccount, 2000)
 console.log(myAccount)
+console.log(accountSummary(myAccount))
 addExpenses(myAccount, 50)
 console.log(myAccount)
+console.log(accountSummary(myAccount))
 addExpenses(myAccount, 175)
 console.log(myAccount)
 console.log(accountSummary(myAccount))
