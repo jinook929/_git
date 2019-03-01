@@ -1,13 +1,13 @@
-const notes = [{
-    title: 'My morning schedule',
-    body: 'Reading the Bible'
-}, {
-    title: 'My afternoon schedule',
-    body: 'Studying Javascript'
-}, {
-    title: 'My evening schedule',
-    body: 'Training for Web Dev'
-}]
+// const notes = [{
+//     title: 'My morning schedule',
+//     body: 'Reading the Bible'
+// }, {
+//     title: 'My afternoon schedule',
+//     body: 'Studying Javascript'
+// }, {
+//     title: 'My evening schedule',
+//     body: 'Training for Web Dev'
+// }]
 
 // console.log(notes)
 // console.log(notes.pop())
@@ -36,8 +36,8 @@ const notes = [{
 //     console.log(item)
 // })
 
-console.log(notes.length)
-console.log(notes)
+// console.log(notes.length)
+// console.log(notes)
 
 // console.log(notes.indexOf({ title: 'My evening schedule', body: 'Training for Web Dev' }))
 
@@ -59,6 +59,17 @@ console.log(notes)
 
 // console.log(index)
 
+const notes = [{
+    title: 'My morning schedule',
+    body: 'Reading the Bible'
+}, {
+    title: 'My afternoon schedule',
+    body: 'Studying Javascript'
+}, {
+    title: 'My evening schedule',
+    body: 'Training for Web Dev'
+}]
+
 const findNote = function (notes, noteTitle) {
     const index = notes.findIndex(function(note, index) {
         return note.title.toLowerCase() === noteTitle.toLowerCase()
@@ -70,14 +81,27 @@ const findNote = function (notes, noteTitle) {
 const note = findNote(notes, 'my evening schedule')
 console.log(note)
 
+
+const lookForNote = function (notes, query) {
+    return notes.filter(function (note, index) {
+        const isTitleMatch = note.title.toLowerCase().includes(query.toLowerCase())
+        const isBodyMatch = note.body.toLowerCase().includes(query.toLowerCase())
+        return isTitleMatch || isBodyMatch
+    })
+}
+
+console.log(lookForNote(notes, 'st'))
 // ******************************************************
 
-const found = function(notes, noteTitle) {
-    const note = notes.find(function(note, index) {
-        return noteTitle === note.title
-    })
-    return note
-}
+// const found = function(notes, noteTitle) {
+//     const note = notes.find(function(note, index) {
+//         return noteTitle === note.title
+//     })
+//     return note
+// }
+
+// const lookFor = found(notes, 'My evening schedule')
+// console.log(lookFor)
 
 // const found_ = function(notes, noteTitle) {
 //     return notes.find(function(note, index) {
@@ -85,8 +109,7 @@ const found = function(notes, noteTitle) {
 //     })
 // }
 
-const lookFor = found(notes, 'My evening schedule')
-console.log(lookFor)
-
 // const lookFor_ = found_(notes, 'My evening schedule')
 // console.log(lookFor_)
+
+// *********************************************************
