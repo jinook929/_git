@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDo List - Short Version</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <h1>ToDo List - Short Version</h1>
+    <ul>
+        <li>'new' : add a new item</li>
+        <li>'list' : show all the items</li>
+        <li>'quit' : quit the app</li>
+    </ul>
+    <script>
+        var todos = []
+        var todo = prompt("What would you want to do?")
+
+        while (todo !== 'quit') {
+            if (todo === 'list') {
+                console.log(todos)
+            } else if (todo === 'new') {
+                var newItem = prompt("What is the new thing to do?")
+                todos.push(newItem)
+            }
+            todo = prompt("What would you want to do?")
+        }
+        console.log('OK. You quit the app.')
+    </script>
+</body>
+
+</html>

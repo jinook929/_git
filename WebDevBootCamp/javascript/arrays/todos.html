@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDo List - Updated</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <h1>ToDo List - Updated</h1>
+    <ul>
+        <li>'list' : show all the items in the array</li>
+        <li>'new' : add a new item to the array</li>
+        <li>'delete' : delete an item from the array</li>
+        <li>'quit' : quit the app</li>
+    </ul>
+    <script>
+        var todos = []
+        var answer = prompt('What would you like to do?')
+
+        while (answer !== 'quit') {
+            if (answer === 'list') {
+                listTodos()
+            } else if (answer === 'new') {
+                addTodo()
+            } else if (answer === 'delete') {
+                deleteTodo()
+            }
+            answer = prompt('What would you like to do?')
+        }
+        console.log('OK, you quit the app.')
+
+        function listTodos() {
+            console.log(`**********`)
+            todos.forEach(function (todo, index) {
+                console.log(`[Index: ${index}] ${todo}`)
+            })
+            console.log(`**********`)
+        }
+
+        function addTodo() {
+            var item = prompt('Enter the new item to do.')
+            todos.push(item)
+            console.log(`**********`)
+            console.log(`Just Added: ${todos[todos.length - 1]}`)
+            todos.forEach(function (todo, index) {
+                console.log(`[Index: ${index}] ${todo}`)
+            })
+            console.log(`**********`)
+        }
+
+        function deleteTodo() {
+            var itemIndex = Number(prompt('What is the index of the item you want to delete?'))
+            console.log(`**********`)
+            console.log(`Just Deleted: ${todos.splice(itemIndex, 1)}`)
+            todos.forEach(function (todo, index) {
+                console.log(`[Index: ${index}] ${todo}`)
+            })
+            console.log(`**********`)
+        }
+    </script>
+</body>
+
+</html>
