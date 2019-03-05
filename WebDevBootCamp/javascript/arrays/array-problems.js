@@ -37,7 +37,7 @@ var nums = [1, 2, 3, 4]
 var colors = ["red", "orange", "yellow", "green"]
 
 function printReverse(array) {
-    for (i = array.length - 1; i >= 0; i--) {
+    for (var i = array.length - 1; i >= 0; i--) {
         console.log(array[i])
     }
 }
@@ -63,12 +63,12 @@ var array5 = [1, 1, 1, 1, 5]
 
 function isUniform(array) {
     var standard = array[0]
-    for (i = 1; i < array.length; i++) {
+    for (var i = 1; i < array.length; i++) {
         if (array[i] !== standard) {
             return console.log(false)
         }
     }
-    console.log(true)
+    return console.log(true)
 }
 
 isUniform(array0)
@@ -87,40 +87,69 @@ var arr2 = [10, 3, 10, 4]
 var arr3 = [-5, 100]
 
 
-function sumArray(arr) {
-    var sum = 0
-    // sum all
-    for (i = 0; i < arr.length; i++) {
-        sum = sum + arr[i]
-    }
-    console.log(sum)
+// function sumArray(arr) {
+//     var sum = 0
+//     // sum all
+//     for (i = 0; i < arr.length; i++) {
+//         sum = sum + arr[i]
+//     }
+//     console.log(sum)
+// }
+
+// sumArray(arr1)
+// sumArray(arr2)
+// sumArray(arr3)
+
+function sumArr(arr) {
+    var total = 0
+    arr.forEach(function(num){
+        total += num
+    })
+    console.log(total)
 }
 
-sumArray(arr1)
-sumArray(arr2)
-sumArray(arr3)
-
+sumArr(arr1)
+sumArr(arr2)
+sumArr(arr3)
 // for(i = 0; i < arr.length; i++) {
 // sum = sum + arr[i]
 // }
 // return console.log(sum)
 console.log('**************************')
 
-function maximum(arr) {
-    for (i = 0; i < arr.length; i++) {
-        var max = 0
-        arr.forEach(function (num) {
-            if (num >= max) {
-                max = num
-            } else {
-                max = max
-            }
-        })
-        console.log(max)
-    }
+
+// ## Biggest Number ##
+
+// function maximum(arr) {
+//     for (i = 0; i < arr.length; i++) {
+//         var max = 0
+//         arr.forEach(function (num) {
+//             if (num >= max) {
+//                 max = num
+//             } 
+//             // else {
+//             //     max = max
+//             // }
+//         })
+//     }
+//     console.log(max)
+// }
+
+// maximum(arr1)
+// maximum(arr2)
+// maximum(arr3)
+
+function max(arr) {
+    var max = arr[0]
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] > max) {
+            max = arr[i]
+        }
+}
+console.log(max)
 }
 
-maximum(arr1)
-maximum(arr2)
-maximum(arr3)
+max(arr1)
+max(arr2)
+max(arr3)
 console.log('**************************')
